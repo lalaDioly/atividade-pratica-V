@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" type="image/png" href="img/isotipo.png">
+    <title>TWISTER Cadastro</title>
+</head>
+<body class="body">
+<header></header>
+<main>
+    <div class="title">
+    </div>
+    <div class="cadastro-container seu-card">
+        <form action="feed.html" method="GET" class="formCadastro">
+            <div class="img-logo"><img src="img/imagotipo.png" alt=""></div>
+            <label for="" class="labelCadastro">Nome</label>
+            <input type="text" id="nome" placeholder="Seu Nome" name="nome_completo" required>
+            <label for="" class="labelCadastro">Usuário</label>
+            <input type="text" id="usuario" placeholder="Seu Usuário" name="usuario_completo" required>
+            <label for="" class="labelCadastro">Senha</label>
+            <input type="password" id="password" placeholder="Sua Senha" name="password_completo" required>
+            <label for="" class="labelCadastro">Confirmar Senha</label>
+            <input type="password" id="password2" placeholder="Confirmar Senha" name="password_completo2" required>
+            <fieldset>
+                <legend class="labelCadastro">Gênero</legend>
+                <input type="radio" id="Feminino" name="second-language" checked />
+                <label htmlFor="Feminino" class="labelCadastro">Feminino</label>
+                <input type="radio" id="Masculino" name="second-language" />
+                <label htmlFor="Masculino" class="labelCadastro">Masculino</label>
+                <input type="radio" id="Outro" name="second-language" />
+                <label htmlFor="Outro" class="labelCadastro">Outro</label>
+                <input type="radio" id="Prefiro" name="second-language" />
+                <label htmlFor="Prefiro" class="labelCadastro">Prefiro Não Informar</label>
+            </fieldset>
+            <label for="" class="labelCadastro">Data de Nascimento</label>
+            <input type="date" id="data_nascimento" name="data_nascimento" required>
+            <button type="submit">Cadastrar</button>
+            <div class="contaJa">
+                <a href="index.html" class="aCadastro">Já tenho Uma conta</a>
+            </div>
+        </form>
+    </div>
+</main>
+</body>
+</html>

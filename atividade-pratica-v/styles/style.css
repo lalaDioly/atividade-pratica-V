@@ -1,0 +1,287 @@
+/* Body */
+body {
+    margin: 0; /* remove margens padrão */
+    padding: 0;
+    overflow-x: hidden;
+    background-image: url(/img/fundo.png);
+    background-size: cover;                 /* cobre toda a tela */
+    background-position: center;            /* centraliza a imagem */
+    background-repeat: no-repeat;           /* evita repetição */                            /* remove margens padrão */
+    background-attachment: fixed;  
+    min-height: 100vh;      
+    font-family: 'Times New Roman', Times, serif;    
+}
+
+body::-webkit-scrollbar {
+  display: none; /* Chrome, Safari e Edge */
+}
+
+/* login */
+.img-logo{
+    margin: 0 auto;
+    width: 30%;
+    margin-bottom: 20px;
+}
+.login-container {
+    align-items: center;
+    margin: 5% auto;
+    max-width: 800px;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.seu-card {
+  background-color: rgba(255, 255, 255, 0.095);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 15px; 
+}
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+.h2-login{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(14, 92, 132);
+}
+.button-login{
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+}
+.fieldset-login{
+    display: flex;
+}
+.index-links{
+    display: flex;
+    gap: 5%;
+    justify-content: start;
+}
+.btn{
+    border-style: none;
+}
+.btn:hover{
+    background-color:rgb(57, 150, 131);
+    color:rgb(255, 255, 255);
+    border-style: none;
+}
+.cadastro{
+    background-color: rgb(14, 92, 132);
+    padding: 10px 20px;
+    border-radius: 5px;
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+}
+.cadastro:hover{
+    background-color:rgb(57, 150, 131);
+    color:rgb(255, 255, 255);
+}
+
+.senha{
+    background-color: rgb(14, 92, 132);
+    padding: 10px 20px;
+    border-radius: 5px;
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+}
+.senha:hover{
+    background-color:rgb(57, 150, 131);
+    color:rgb(255, 255, 255);
+}
+
+
+/* Cadastro */
+.cadastro-container{
+    background-image:  #76767631;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.labelCadastro{
+    color: aliceblue;
+}
+.contaJa{
+    display: flex;
+    justify-content: center;
+}
+.aCadastro{
+    text-decoration: none;
+    color: rgb(242, 177, 255);
+}
+.aCadastro:hover{
+    color: rgb(237, 42, 172);
+}
+
+/* Feed */
+
+.imgLogotipo{
+    display: flex;
+    justify-content: start !important;
+    width: 8%;
+}
+/* Header */
+.header-feed{
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    width: 100%; /* ocupa toda a largura */
+    background-color: rgba(158, 158, 158, 0.118);
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+}
+
+/* Links dentro do header */
+.container-header {
+    display: flex;
+    gap: 20px;
+}
+
+.container-header a {
+    color:rgb(65, 64, 64);
+    text-decoration: none;
+}
+
+.container-header a:hover {
+    color: rgb(146, 67, 255);
+    text-decoration: underline;
+}
+
+
+.imgCard {
+    display: flex;
+    align-items: center; /* centraliza verticalmente */
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.card2 {
+    display: flex;
+    align-items: center; /* centraliza verticalmente */
+    gap: 20px;           /* espaço entre imagem e textos */
+}
+
+.divP {
+    margin-top: 1%;
+    display: flex;
+    flex-direction: row; /* coloca os parágrafos em linha */
+    align-items: center;
+    gap: 15px;           /* espaço entre os parágrafos */
+}
+
+.p1 {
+    font-size: 25px;  
+}
+.p2, .p3 {
+    opacity: 0.6;
+    font-size: 20px;  
+}
+
+.footerCard{
+    display: flex;
+}
+.imgCardCora{
+    text-decoration: none;
+    color: rgb(252, 55, 55);
+    width: 2%;
+    height: 2%;
+}
+.imgCardCome{
+    text-decoration: none;
+    width: 2%;
+    height: 2%;
+}
+.publicar{
+    display: flex;
+    justify-content: space-between;
+}
+.p0{
+    padding-top: 1%;
+    opacity: 0.6;
+    font-size: 15px;
+}
+.cardPrincipal{
+    display: flex;
+    align-items: center; /* centraliza verticalmente */
+    gap: 20px;           /* espaço entre imagem e textos */
+}
+.section-Feed{
+    margin-top: 10px;
+    justify-content: center;
+    width: 60%;
+    max-width: 1200px; /* ou outro valor maior */
+    margin: 0 auto; /* centraliza */
+    align-items: center;
+}
+/* Para telas menores que 768px (tablets e celulares grandes) */
+@media (max-width: 768px) {
+.login-container, .cadastro-container, .section-Feed {
+    width: 90%;          /* ocupa quase toda a tela */
+    padding: 1rem;       /* reduz padding */
+}
+
+.img-logo {
+    width: 60%;          /* logo maior para telas pequenas */
+}
+
+.fieldset-login {
+    flex-direction: column; /* inputs ficam empilhados */
+    gap: 10px;
+}
+
+.index-links {
+    flex-direction: column; /* links em coluna */
+    gap: 15px;
+    align-items: center;
+}
+
+.container-header {
+    flex-wrap: wrap;     /* links quebram linha se necessário */
+    gap: 10px;
+}
+
+.imgLogotipo {
+    width: 20%;          /* logo menor no header */
+}
+
+.p1 {
+    font-size: 18px;     /* texto menor */
+}
+.p2, .p3 {
+    font-size: 14px;
+}
+}
+
+/* Para telas muito pequenas (até 480px, celulares compactos) */
+@media (max-width: 480px) {
+.login-container, .cadastro-container {
+    width: 95%;
+    padding: 0.8rem;
+}
+
+.img-logo {
+    width: 80%;          /* logo ocupa mais espaço */
+}
+
+.container-header {
+    flex-direction: column; /* links em coluna */
+    align-items: center;
+}
+
+.section-Feed {
+    width: 100%;         /* feed ocupa toda a tela */
+}
+
+.p1 {
+    font-size: 16px;
+}
+.p2, .p3 {
+    font-size: 12px;
+}
+}
+
